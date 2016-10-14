@@ -1,9 +1,9 @@
 # include <windows.h>
-# include <iostream.h>
+# include <iostream>
 # include <conio.h>
 # include <string>
-# include <fstream.h>
-# include <iomanip.h>
+# include <fstream>
+# include <iomanip>
 # include <stdlib.h>
 # include <time.h>
 //# include <dsound.h>
@@ -11,8 +11,8 @@
 # include "winbgim.h"
 
 
-ofstream prn ("prn");
-ifstream in_file ("input.txt");
+std::ofstream prn ("prn");
+std::ifstream in_file ("input.txt");
 const int MAX_ROW=10;
 const int MAX_COL=10;
 const int MAX=6;

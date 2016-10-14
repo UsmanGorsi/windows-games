@@ -1,5 +1,5 @@
-CXX=i586-mingw32msvc-g++
-AR=i586-mingw32msvc-ar
+CXX=i686-w64-mingw32-g++
+AR=i686-w64-mingw32-ar
 
 libbgi.a: drawing.o misc.o mouse.o palette.o text.o winbgi.o winthread.o file.o dibutil.o winbgim.h graphics.h
 	$(AR) -rv libbgi.a drawing.o misc.o mouse.o palette.o text.o winthread.o winbgi.o file.o dibutil.o
