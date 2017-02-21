@@ -4,10 +4,10 @@ AR=i686-w64-mingw32-ar
 libbgi.a: drawing.o misc.o mouse.o palette.o text.o winbgi.o winthread.o file.o dibutil.o winbgim.h graphics.h
 	$(AR) -rv libbgi.a drawing.o misc.o mouse.o palette.o text.o winthread.o winbgi.o file.o dibutil.o
 clean:
-	rm *.o  
-	rm libbgi.a
+	rm -rf *.o
+	rm -rf libbgi.a
 
-CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions
+CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions -Wno-narrowing
 
 drawing.o: drawing.cxx winbgim.h winbgitypes.h
 	$(CXX) $(CPPFLAGS) drawing.cxx

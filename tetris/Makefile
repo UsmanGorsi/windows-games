@@ -25,4 +25,4 @@ all:
 
 clean:
 	$(MAKE) --directory=../WinBGIm clean
-	rm $(OUTPUT)
+	rm -rf $(OUTPUT)

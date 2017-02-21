@@ -480,7 +480,7 @@ int map25[6][10]= {
 
 int guy_x, guy_y;
 int map_x,map_y;
-int end;
+int end_game;
 int item[20];
 int badguy;
 int p_health, p_strength,p_magic,c_health,c_strength,c_magic;
@@ -533,7 +533,7 @@ int main () {
     char c;
     time_t t;
     srand((unsigned) time(&t));
-    end=0;
+    end_game=0;
     map_x=0;
     map_y=0;
     badguy=0;
@@ -713,7 +713,7 @@ int main () {
         }
         print();
         items();
-    }   while (end !=1);
+    }   while (end_game !=1);
 //end keyboard
 
     return 0;
@@ -1309,7 +1309,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1335,7 +1335,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1361,7 +1361,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1387,7 +1387,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1413,7 +1413,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1439,7 +1439,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1465,7 +1465,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1491,7 +1491,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1517,7 +1517,7 @@ void items() {
         sndPlaySound("monster.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1544,7 +1544,7 @@ void items() {
         sndPlaySound("boss1.wav", SND_ASYNC);
         temp=battle();
         if (temp==1) {
-            end=1;
+            end_game=1;
             break;
         }
         badguy=0;
@@ -1574,7 +1574,7 @@ void items() {
         settextstyle(1,0,5);
         outtextxy(90,230,"YOU WIN!");
         sndPlaySound("intro.wav", SND_NODEFAULT);
-        end=1;
+        end_game=1;
         break;
 
     case 21:
