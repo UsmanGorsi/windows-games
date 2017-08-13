@@ -35,7 +35,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory=".." />
+			<Add directory="../include" />
 		</Compiler>
 		<Linker>
 			<Add library="bgi" />

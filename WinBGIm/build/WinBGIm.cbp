@@ -30,19 +30,19 @@
 			<Add option="-fno-rtti" />
 			<Add option="-fno-exceptions" />
 		</Compiler>
-		<Unit filename="../dibapi.h" />
-		<Unit filename="../dibutil.cxx" />
-		<Unit filename="../dibutil.h" />
-		<Unit filename="../drawing.cxx" />
-		<Unit filename="../file.cxx" />
-		<Unit filename="../misc.cxx" />
-		<Unit filename="../mouse.cxx" />
-		<Unit filename="../palette.cxx" />
-		<Unit filename="../text.cxx" />
-		<Unit filename="../winbgi.cxx" />
-		<Unit filename="../winbgim.h" />
-		<Unit filename="../winbgitypes.h" />
-		<Unit filename="../winthread.cxx" />
+		<Unit filename="../src/dibapi.h" />
+		<Unit filename="../src/dibutil.cxx" />
+		<Unit filename="../src/dibutil.h" />
+		<Unit filename="../src/drawing.cxx" />
+		<Unit filename="../src/file.cxx" />
+		<Unit filename="../src/misc.cxx" />
+		<Unit filename="../src/mouse.cxx" />
+		<Unit filename="../src/palette.cxx" />
+		<Unit filename="../src/text.cxx" />
+		<Unit filename="../src/winbgi.cxx" />
+		<Unit filename="../src/winbgim.h" />
+		<Unit filename="../src/winbgitypes.h" />
+		<Unit filename="../src/winthread.cxx" />
 		<Extensions>
 			<code_completion />
 			<envvars />
