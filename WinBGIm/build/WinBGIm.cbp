@@ -29,6 +29,7 @@
 		<Compiler>
 			<Add option="-fno-rtti" />
 			<Add option="-fno-exceptions" />
+			<Add option="-Wno-narrowing" />
 		</Compiler>
 		<Unit filename="../src/dibapi.h" />
 		<Unit filename="../src/dibutil.cxx" />
