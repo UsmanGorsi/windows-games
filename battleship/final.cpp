@@ -8,7 +8,7 @@
 # include <time.h>
 //# include <dsound.h>
 # include <mmsystem.h>
-# include "winbgim.h"
+# include "graphics.h"
 
 
 std::ofstream prn ("prn");

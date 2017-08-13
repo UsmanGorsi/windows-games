@@ -8,7 +8,7 @@
 #include <time.h>
 //#include <dsound.h>
 #include <mmsystem.h>
-#include "winbgim.h"
+#include "graphics.h"
 #include <stdio.h> // <== must be included if you want to print a number in graphics window.
 #include <math.h>
 
