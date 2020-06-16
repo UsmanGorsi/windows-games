@@ -99,8 +99,11 @@ DWORD WINAPI BGI__ThreadInitWindow( LPVOID pThreadData )
 
     // Store the address of the WindowData structure in the window's user data
     // MGM TODO: Change this to SetWindowLongPtr:
-    //  SetWindowLongPtr( hWindow, GWL_USERDATA, (LONG_PTR)pWndData );
+#ifdef _WIN64
+    SetWindowLongPtr( hWindow, GWLP_USERDATA, (LONG_PTR)pWndData );
+#else
     SetWindowLong( hWindow, GWL_USERDATA, (LONG)pWndData );
+#endif
 
     // Set the default active and visual page.  These must be set here in
     // addition to setting all the defaults in initwindow because the paint
